@@ -27,6 +27,9 @@ function btnSubmit() {
         return false;
     }
 
+    //hide error lables
+    errorFirstName.style.display = "none";
+
     if(firstName == null) {
         let msgText = "firstName not found";
         console.log(msgText);       
