@@ -138,6 +138,9 @@ function lnkClear() {
     errorEmail.style.display = "none";
     errorComments.style.display = "none";
 
+    const divdisplayinfo = document.getElementById("div-display-info");
+    divdisplayinfo.innerText = "";
+
     firstName.focus();
 }
 
