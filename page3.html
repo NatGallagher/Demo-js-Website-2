@@ -27,9 +27,13 @@
             <span id="error-first-name" style="display: none; color: red"> * first name required</span>
             <br>
             <span>Last Name: </span><input id="last-name" type="text" placeholder="last name"><br>
-            <span>* Email: </span><input id="email" type="email" placeholder="email required" required><br>
+            <span>* Email: </span><input id="email" type="email" placeholder="email required" required>
+            <span id="error-email" style="display: none; color: red"> * email required</span>
+            <br>
             <span>* Comment: </span><br>
-            <textarea id="comments" placeholder="comments required" cols="30" rows="5" required></textarea><br>
+            <textarea id="comments" placeholder="comments required" cols="30" rows="5" required></textarea>
+            <span id="error-comments" style="display: none; color: red"> * comments required</span>
+            <br>
             <p></p>
             <button onclick="return btnSubmit()">Submit</button>
             <a href="#" onclick="lnkClear()">Clear</a>
