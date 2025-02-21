@@ -13,9 +13,16 @@ function btnSubmit() {
     const lastName = document.getElementById("last-name");
     const email = document.getElementById("email");
     const comments = document.getElementById("comments");
+    const errorFirstName = document.getElementById("error-first-name");
 
     if(divdisplayinfo == null) {
         let msgText = "divdisplayinfo not found";
+        console.log(msgText);
+        return false;
+    }
+
+    if(errorFirstName == null) {
+        let msgText = "errorFirstName not found";
         console.log(msgText);
         return false;
     }
