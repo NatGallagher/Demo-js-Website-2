@@ -69,6 +69,9 @@ function btnSubmit() {
         return false;
     }
 
+    errorEmail.style.display = "none";
+
+
     if(email.value.trim().length == 0) {
         let msgText = "Please enter a valid input";
         console.log(msgText);
@@ -83,6 +86,9 @@ function btnSubmit() {
         console.log(msgText);
         return false;
     }
+
+    errorComments.style.display = "none";
+
 
     if(comments.value.trim().length == 0) {
         let msgText = "Please enter a valid input";
