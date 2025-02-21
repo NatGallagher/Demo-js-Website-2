@@ -37,6 +37,17 @@ function btnSubmit() {
         let msgText = "Please enter a valid input";
         console.log(msgText);
         divdisplayinfo.innerText = "Please Enter Your First Name";
+
+        //show error lable
+        errorFirstName.style.display = "inline-block";
+
+        //other:
+        //add remove element class
+        //firstName.style.????? -- forder/color/other
+
+        //firstName.classList.remove(".error-first-name");
+        //firstName.classList.add(".error-first-name");
+
         return false;
     }
 
