@@ -14,6 +14,8 @@ function btnSubmit() {
     const email = document.getElementById("email");
     const comments = document.getElementById("comments");
     const errorFirstName = document.getElementById("error-first-name");
+    const errorEmail = document.getElementById("error-email");
+    const errorComments = document.getElementById("error-comments");
 
     if(divdisplayinfo == null) {
         let msgText = "divdisplayinfo not found";
@@ -63,6 +65,8 @@ function btnSubmit() {
     if(email == null) {
         let msgText = "email not found";
         console.log(msgText);
+        errorEmail.style.display = "inline-block";
+
         return false;
     }
 
@@ -83,6 +87,8 @@ function btnSubmit() {
         let msgText = "Please enter a valid input";
         console.log(msgText);
         divdisplayinfo.innerText = "Please Enter Your Comments";
+        errorComments.style.display = "inline-block";
+
         return false;
     }
 
