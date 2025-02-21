@@ -65,7 +65,6 @@ function btnSubmit() {
     if(email == null) {
         let msgText = "email not found";
         console.log(msgText);
-        errorEmail.style.display = "inline-block";
 
         return false;
     }
@@ -74,6 +73,8 @@ function btnSubmit() {
         let msgText = "Please enter a valid input";
         console.log(msgText);
         divdisplayinfo.innerText = "Please Enter Your Email";
+        errorEmail.style.display = "inline-block";
+
         return false;
     }
 
