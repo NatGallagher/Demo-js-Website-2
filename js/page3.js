@@ -99,7 +99,7 @@ function btnSubmit() {
         return false;
     }
 
-    msgText = "form submitted firstName: " + firstName.value + ", lastName: " + lastName.value + ", email: " + email.value + ", comments: " + comments.value;
+    msgText = `form submitted firstName: ${firstName.value}, lastName: ${lastName.value}, email: ${email.value}, comments: ${comments.value}`;
     console.log(msgText);
 
     msgText = "form submitted";
