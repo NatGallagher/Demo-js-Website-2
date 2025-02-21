@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2 js dom demo</title>
+    <link rel="stylesheet" href="css/global-1.css">
+    <script src="js/page2.js"></script>
+</head>
+<body onload="page_load()">
+    <nav>
+        <a href="index.html"><img src="logo-1.png" width="100" height="30" alt="logo-1"></a>
+        <a href="page1.html">page 1</a>
+        <a href="page2.html">page 2</a>
+        <a href="page3.html">page 3</a>
+    </nav>
+    <main class="global-center-page">
+        <section>
+            <header>
+                <h1>Page 2 - dom demo</h1>
+            </header>
+            <p></p>
+            <div>
+                <input type="text" id="txtsearch" placeholder="# enter text to search" maxlength="25">
+                <button onclick="btnSearch()">Search</button>
+                <a href="#" onclick="lnkClear()">Clear</a><br>
+            </div>
+            <p></p>
+            <div>
+                <a href="#" onclick="lnk_dom_demo_1()">dom demo 1</a>
+                <a href="#" onclick="lnk_dom_demo_2()">dom demo 2</a>
+                <a href="#" onclick="lnk_dom_demo_3()">dom demo 3</a>
+            </div>
+            <p></p>
+            <div id="div-display-info">
+                <p>Display info</p>
+            </div>
+    </section>
+    </main>
+    <p></p>
+    <footer class="global-footer">
+        footer @ 2025
+    </footer>
+</body>
+</html>
