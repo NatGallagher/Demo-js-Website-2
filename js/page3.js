@@ -120,16 +120,25 @@ function lnkClear() {
     let msgText = "# page 3: lnkClear";
     console.log(msgText);
 
-   const firstName = document.getElementById("first-name");
-   const lastName = document.getElementById("last-name");
-   const email = document.getElementById("email");
-   const comments = document.getElementById("comments");
+    const firstName = document.getElementById("first-name");
+    const lastName = document.getElementById("last-name");
+    const email = document.getElementById("email");
+    const comments = document.getElementById("comments");
 
-   firstName.value = "";
-   lastName.value = "";
-   email.value = "";
-   comments.value = "";
+    firstName.value = "";
+    lastName.value = "";
+    email.value = "";
+    comments.value = "";
+
+    const errorFirstName = document.getElementById("error-first-name");
+    const errorEmail = document.getElementById("error-email");
+    const errorComments = document.getElementById("error-comments");
     
+    errorFirstName.style.display = "none";
+    errorEmail.style.display = "none";
+    errorComments.style.display = "none";
+
+    firstName.focus();
 }
 
 
