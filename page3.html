@@ -23,13 +23,15 @@
             <p>div display info</p>
         </div>
         <form>
-            <span>* First Name: </span><input id="first-name" type="text" placeholder="first name required" required><br>
+            <span>* First Name: </span><input id="first-name" type="text" placeholder="first name required" required>
+            <span id="error-first-name" style="display: inline-block; color: red"> * first name required</span>
+            <br>
             <span>Last Name: </span><input id="last-name" type="text" placeholder="last name"><br>
             <span>* Email: </span><input id="email" type="email" placeholder="email required" required><br>
             <span>* Comment: </span><br>
             <textarea id="comments" placeholder="comments required" cols="30" rows="5" required></textarea><br>
             <p></p>
-            <button onclick="btnSubmit()">Submit</button>
+            <button onclick="return btnSubmit()">Submit</button>
             <a href="#" onclick="lnkClear()">Clear</a>
         </form>
     </main>
